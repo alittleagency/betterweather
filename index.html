@@ -129,7 +129,7 @@ nav {
 .demo-inner { max-width: 1100px; margin: 0 auto; }
 .demo-layout { display: grid; grid-template-columns: 320px 1fr; gap: 48px; align-items: start; }
 .demo-intro { margin-bottom: 0; }
-.demo-sticky { position: sticky; top: 100px; }
+.demo-sticky { position: sticky; top: 100px; z-index: 1; align-self: start; }
 
 /* ── PHONE ── */
 .phone { width: 320px; background: white; border-radius: 28px; overflow: hidden; box-shadow: 0 2px 0 var(--border), 0 16px 48px rgba(0,0,0,0.08); border: 1px solid var(--border); }
@@ -166,56 +166,56 @@ nav {
 .ai .e { font-size: 20px; display: block; }
 .ai .n { font-size: 8px; font-weight: 400; color: var(--soft); margin-top: 3px; }
 .ai.skip { opacity: 0.28; filter: grayscale(1); }
-.acc-ctx { font-size: 11px; font-weight: 400; color: var(--mid); line-height: 1.6; }
+.acc-ctx { font-size: 11px; font-weight: 400; color: #333330; line-height: 1.6; }
 .acc-ctx strong { font-weight: 700; color: var(--text); }
 
 /* hair */
-.hair-bg { background: var(--pink-p); border-color: #f5c0cc; }
-.hair-t { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; color: var(--pink); margin-bottom: 3px; }
-.hair-s { font-size: 11px; font-weight: 300; color: #a04060; line-height: 1.5; }
+.hair-bg { background: #fff0f4; border-color: #e8a0b4; }
+.hair-t { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; color: #8a1840; margin-bottom: 3px; }
+.hair-s { font-size: 11px; font-weight: 400; color: #6a1830; line-height: 1.5; }
 
 /* rain */
-.rain-bg { background: var(--blue-p); border-color: #c8d9ff; display: flex; align-items: center; gap: 12px; }
+.rain-bg { background: #dce8ff; border-color: #a0b8ee; display: flex; align-items: center; gap: 12px; }
 .ri { font-size: 22px; flex-shrink: 0; }
-.rt { font-size: 13px; font-weight: 700; color: var(--blue); }
-.rs { font-size: 11px; font-weight: 300; color: var(--soft); }
+.rt { font-size: 13px; font-weight: 700; color: #0040cc; }
+.rs { font-size: 11px; font-weight: 400; color: #334488; }
 .rtrack { width: 48px; height: 4px; background: #c8d9ff; border-radius: 100px; overflow: hidden; flex-shrink: 0; }
 .rfill { height: 100%; background: var(--blue); border-radius: 100px; width: 65%; }
 
 /* uvlip */
-.lip-bg { background: var(--pink-p); border-color: #f5c0cc; display: flex; align-items: center; gap: 10px; }
-.lipt { font-size: 13px; font-weight: 700; color: var(--pink); }
-.lips { font-size: 11px; font-weight: 300; color: #a04060; margin-top: 1px; }
+.lip-bg { background: #ffe8f0; border-color: #e0a0b8; display: flex; align-items: center; gap: 10px; }
+.lipt { font-size: 13px; font-weight: 700; color: #8a1840; }
+.lips { font-size: 11px; font-weight: 400; color: #6a1830; margin-top: 1px; }
 
 /* stats */
 .stats-row { display: flex; gap: 8px; margin: 0 16px 10px; }
 .sc { flex: 1; background: var(--off); border: 1px solid var(--bsoft); border-radius: 14px; padding: 12px 10px; }
 .scl { font-size: 9px; font-weight: 300; color: var(--soft); text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 5px; }
 .scv { font-size: 22px; font-weight: 800; letter-spacing: -0.04em; color: var(--text); line-height: 1; }
-.scb { font-size: 10px; font-weight: 300; color: var(--soft); margin-top: 3px; letter-spacing: 0.04em; }
+.scb { font-size: 10px; font-weight: 500; color: #444440; margin-top: 3px; letter-spacing: 0.04em; }
 
 /* migraine */
-.mig-bg { background: var(--purple-p); border-color: #d8d0f5; display: flex; align-items: center; gap: 10px; }
-.migt { font-size: 13px; font-weight: 700; color: var(--purple); }
-.migs { font-size: 11px; font-weight: 300; color: #5a4090; margin-top: 1px; line-height: 1.4; }
+.mig-bg { background: #ece8ff; border-color: #b0a0e0; display: flex; align-items: center; gap: 10px; }
+.migt { font-size: 13px; font-weight: 700; color: #3a1880; }
+.migs { font-size: 11px; font-weight: 400; color: #3a2870; margin-top: 1px; line-height: 1.4; }
 
 /* aqi */
-.aqi-bg { background: #fff8f0; border-color: #f5d8b0; display: flex; align-items: center; gap: 10px; }
-.aqit { font-size: 13px; font-weight: 700; color: #d97706; }
-.aqis { font-size: 11px; font-weight: 300; color: #8a4020; margin-top: 1px; line-height: 1.4; }
+.aqi-bg { background: #ffeedd; border-color: #e0b880; display: flex; align-items: center; gap: 10px; }
+.aqit { font-size: 13px; font-weight: 700; color: #8a4400; }
+.aqis { font-size: 11px; font-weight: 400; color: #6a2800; margin-top: 1px; line-height: 1.4; }
 
 /* sun */
 .sun-bg { background: var(--sun-p); border-color: #f5dfa0; display: flex; align-items: center; justify-content: space-around; }
 .sun-i { text-align: center; }
-.sunl { font-size: 9px; font-weight: 300; color: #c8a040; text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 3px; }
+.sunl { font-size: 9px; font-weight: 500; color: #8a6010; text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 3px; }
 .sunt { font-size: 22px; font-weight: 800; letter-spacing: -0.04em; color: var(--text); }
-.sunap { font-size: 10px; font-weight: 300; color: var(--soft); }
-.daylen { font-size: 13px; font-weight: 700; color: var(--mid); }
+.sunap { font-size: 10px; font-weight: 400; color: #555550; }
+.daylen { font-size: 13px; font-weight: 700; color: #333330; }
 
 /* pet */
-.pet-bg { background: var(--teal-p); border-color: #b0e8e2; display: flex; align-items: center; gap: 10px; }
-.pett { font-size: 13px; font-weight: 700; color: var(--teal); }
-.pets { font-size: 11px; font-weight: 300; color: #1a6b62; margin-top: 1px; line-height: 1.4; }
+.pet-bg { background: #d8f5f0; border-color: #80d0c8; display: flex; align-items: center; gap: 10px; }
+.pett { font-size: 13px; font-weight: 700; color: #084840; }
+.pets { font-size: 11px; font-weight: 400; color: #084838; margin-top: 1px; line-height: 1.4; }
 
 /* moon */
 .moon-bg { background: #1a1a2e; border-color: #2a2a4e; display: flex; align-items: center; gap: 10px; }
@@ -228,7 +228,7 @@ nav {
 .hourly-row { display: flex; gap: 7px; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; }
 .hourly-row::-webkit-scrollbar { display: none; }
 .hc { flex-shrink: 0; background: var(--off); border: 1px solid var(--bsoft); border-radius: 13px; padding: 9px 10px; text-align: center; min-width: 54px; }
-.hc.now { background: var(--text); border-color: var(--text); }
+.hc.now { background: #1a6bff !important; border-color: #1a6bff !important; }
 .ht { font-size: 9px; font-weight: 300; color: var(--soft); letter-spacing: 0.06em; margin-bottom: 6px; }
 .hc.now .ht { color: rgba(255,255,255,0.4); }
 .hi { font-size: 17px; display: block; margin-bottom: 6px; }
@@ -271,19 +271,14 @@ nav {
 .tog { position: relative; width: 40px; height: 23px; flex-shrink: 0; }
 .tog input { opacity: 0; width: 0; height: 0; position: absolute; }
 .tog-track { position: absolute; inset: 0; background: var(--border); border-radius: 100px; cursor: pointer; transition: background 0.2s; }
-.tog input:checked + .tog-track { background: var(--text); }
+.tog input:checked + .tog-track { background: #141414; }
 .tog-thumb { position: absolute; top: 3px; left: 3px; width: 17px; height: 17px; border-radius: 50%; background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.2); transition: transform 0.2s; pointer-events: none; }
 .tog input:checked ~ .tog-thumb { transform: translateX(17px); }
 
 /* SETTINGS PANEL (right side) */
 .settings-panel { }
 .settings-panel-LEFT {
-  position: sticky; top: 100px;
-  max-height: calc(100vh - 120px);
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
-  padding-right: 8px;
+  position: static;
 }
 .sp-h { font-size: 20px; font-weight: 800; letter-spacing: -0.03em; color: var(--text); margin-bottom: 4px; }
 .sp-p { font-size: 13px; font-weight: 300; color: var(--soft); margin-bottom: 20px; line-height: 1.5; }
@@ -711,18 +706,11 @@ function tw(id, cb) {
 function setColor(color, btn) {
   document.querySelectorAll('.cdot').forEach(d => d.classList.remove('on'));
   btn.classList.add('on');
-  // Update accent dots in phone
-  document.querySelectorAll('.loc-dot').forEach(d => d.style.background = color);
-  // Update rain timer text color
-  document.querySelectorAll('.rt').forEach(d => d.style.color = color);
-  // Update pollen badge color
+  // Only update the location dot — accent color is decorative only
+  document.querySelectorAll('.loc-dot, .ph-dot, .eye-dot').forEach(d => d.style.background = color);
+  // Update the rain fill bar
   document.querySelectorAll('.rfill').forEach(d => d.style.background = color);
-  // Update hourly "now" card
-  document.querySelectorAll('.hc.now').forEach(d => { d.style.background = color; d.style.borderColor = color; });
-  // Update toggle active state via CSS variable simulation
-  document.documentElement.style.setProperty('--accent', color);
-  // Update checked toggles
-  document.querySelectorAll('.tog input:checked + .tog-track').forEach(t => t.style.background = color);
+  // Toggles and now-card stay blue always — never change those
 }
 
 // Waitlist
